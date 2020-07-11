@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,11 +11,9 @@
 		480539354016546E819EA767 /* Pods_RainstormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC481CC34ECEAD9E2C1B821 /* Pods_RainstormTests.framework */; };
 		E3C8882C24B98BFA001D1493 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8882B24B98BFA001D1493 /* AppDelegate.swift */; };
 		E3C8882E24B98BFA001D1493 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8882D24B98BFA001D1493 /* SceneDelegate.swift */; };
-		E3C8883024B98BFA001D1493 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8882F24B98BFA001D1493 /* ViewController.swift */; };
-		E3C8883324B98BFA001D1493 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3C8883124B98BFA001D1493 /* Main.storyboard */; };
 		E3C8883524B98BFB001D1493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3C8883424B98BFB001D1493 /* Assets.xcassets */; };
 		E3C8883824B98BFB001D1493 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3C8883624B98BFB001D1493 /* LaunchScreen.storyboard */; };
-		E3C8884624B98E9B001D1493 /* RainstormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8884524B98E9B001D1493 /* RainstormTests.swift */; };
+		E3C8885624B993F4001D1493 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8885524B993F4001D1493 /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +34,12 @@
 		E3C8882824B98BFA001D1493 /* Rainstorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rainstorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C8882B24B98BFA001D1493 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3C8882D24B98BFA001D1493 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E3C8882F24B98BFA001D1493 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E3C8883224B98BFA001D1493 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3C8883424B98BFB001D1493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3C8883724B98BFB001D1493 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3C8883924B98BFB001D1493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3C8884324B98E9B001D1493 /* RainstormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RainstormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3C8884524B98E9B001D1493 /* RainstormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainstormTests.swift; sourceTree = "<group>"; };
 		E3C8884724B98E9B001D1493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3C8885524B993F4001D1493 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		EAC481CC34ECEAD9E2C1B821 /* Pods_RainstormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainstormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEAFF683232FA12B2A9F402F /* Pods-Rainstorm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rainstorm.release.xcconfig"; path = "Target Support Files/Pods-Rainstorm/Pods-Rainstorm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,7 +81,6 @@
 				D0F01FC6CBDB3052C0C2F95F /* Pods-RainstormTests.debug.xcconfig */,
 				043C91950D308B5CF343B02C /* Pods-RainstormTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -112,13 +107,11 @@
 		E3C8882A24B98BFA001D1493 /* Rainstorm */ = {
 			isa = PBXGroup;
 			children = (
-				E3C8882B24B98BFA001D1493 /* AppDelegate.swift */,
-				E3C8882D24B98BFA001D1493 /* SceneDelegate.swift */,
-				E3C8882F24B98BFA001D1493 /* ViewController.swift */,
-				E3C8883124B98BFA001D1493 /* Main.storyboard */,
-				E3C8883424B98BFB001D1493 /* Assets.xcassets */,
-				E3C8883624B98BFB001D1493 /* LaunchScreen.storyboard */,
-				E3C8883924B98BFB001D1493 /* Info.plist */,
+				E3C8885324B993C3001D1493 /* ViewControllers */,
+				E3C8885224B9938B001D1493 /* Resources */,
+				E3C8885124B99353001D1493 /* Storyboards */,
+				E3C8885024B992A6001D1493 /* SupportingFiles */,
+				E3C8884F24B9928E001D1493 /* ApplicationDelegates */,
 			);
 			path = Rainstorm;
 			sourceTree = "<group>";
@@ -126,10 +119,74 @@
 		E3C8884424B98E9B001D1493 /* RainstormTests */ = {
 			isa = PBXGroup;
 			children = (
-				E3C8884524B98E9B001D1493 /* RainstormTests.swift */,
-				E3C8884724B98E9B001D1493 /* Info.plist */,
+				E3C8884E24B99251001D1493 /* Cases */,
+				E3C8884D24B99203001D1493 /* SupportingFiles */,
 			);
 			path = RainstormTests;
+			sourceTree = "<group>";
+		};
+		E3C8884D24B99203001D1493 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E3C8884724B98E9B001D1493 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E3C8884E24B99251001D1493 /* Cases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cases;
+			sourceTree = "<group>";
+		};
+		E3C8884F24B9928E001D1493 /* ApplicationDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				E3C8882B24B98BFA001D1493 /* AppDelegate.swift */,
+				E3C8882D24B98BFA001D1493 /* SceneDelegate.swift */,
+			);
+			path = ApplicationDelegates;
+			sourceTree = "<group>";
+		};
+		E3C8885024B992A6001D1493 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E3C8883924B98BFB001D1493 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E3C8885124B99353001D1493 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E3C8883624B98BFB001D1493 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E3C8885224B9938B001D1493 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E3C8883424B98BFB001D1493 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E3C8885324B993C3001D1493 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E3C8885424B993CC001D1493 /* RootViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E3C8885424B993CC001D1493 /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E3C8885524B993F4001D1493 /* RootViewController.swift */,
+			);
+			path = RootViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +200,7 @@
 				E3C8882424B98BFA001D1493 /* Sources */,
 				E3C8882524B98BFA001D1493 /* Frameworks */,
 				E3C8882624B98BFA001D1493 /* Resources */,
-				712D6DC0E716F3221D220734 /* [CP] Embed Pods Frameworks */,
+				5348264A31C6D2D3FCBE21F5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -219,7 +276,6 @@
 			files = (
 				E3C8883824B98BFB001D1493 /* LaunchScreen.storyboard in Resources */,
 				E3C8883524B98BFB001D1493 /* Assets.xcassets in Resources */,
-				E3C8883324B98BFA001D1493 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +289,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5348264A31C6D2D3FCBE21F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rainstorm/Pods-Rainstorm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rainstorm/Pods-Rainstorm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rainstorm/Pods-Rainstorm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		583F8E6B98AD0690DDF842CB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,23 +326,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		712D6DC0E716F3221D220734 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Rainstorm/Pods-Rainstorm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Rainstorm/Pods-Rainstorm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rainstorm/Pods-Rainstorm-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8981D480B6E171791CE75B59 /* [CP] Check Pods Manifest.lock */ = {
@@ -318,9 +374,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3C8883024B98BFA001D1493 /* ViewController.swift in Sources */,
 				E3C8882C24B98BFA001D1493 /* AppDelegate.swift in Sources */,
 				E3C8882E24B98BFA001D1493 /* SceneDelegate.swift in Sources */,
+				E3C8885624B993F4001D1493 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +384,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3C8884624B98E9B001D1493 /* RainstormTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,14 +398,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E3C8883124B98BFA001D1493 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E3C8883224B98BFA001D1493 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E3C8883624B98BFB001D1493 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -483,7 +530,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GTL8J49U3L;
-				INFOPLIST_FILE = Rainstorm/Info.plist;
+				INFOPLIST_FILE = Rainstorm/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -502,7 +549,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GTL8J49U3L;
-				INFOPLIST_FILE = Rainstorm/Info.plist;
+				INFOPLIST_FILE = Rainstorm/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -521,7 +568,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GTL8J49U3L;
-				INFOPLIST_FILE = RainstormTests/Info.plist;
+				INFOPLIST_FILE = RainstormTests/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -542,7 +589,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GTL8J49U3L;
-				INFOPLIST_FILE = RainstormTests/Info.plist;
+				INFOPLIST_FILE = RainstormTests/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
