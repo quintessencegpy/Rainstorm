@@ -14,6 +14,8 @@
 		E3C8883524B98BFB001D1493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3C8883424B98BFB001D1493 /* Assets.xcassets */; };
 		E3C8883824B98BFB001D1493 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3C8883624B98BFB001D1493 /* LaunchScreen.storyboard */; };
 		E3C8885624B993F4001D1493 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8885524B993F4001D1493 /* RootViewController.swift */; };
+		E3C8885B24BA171F001D1493 /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8885A24BA171F001D1493 /* DayViewController.swift */; };
+		E3C8885D24BA17B1001D1493 /* WeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8885C24BA17B1001D1493 /* WeekViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		E3C8884324B98E9B001D1493 /* RainstormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RainstormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C8884724B98E9B001D1493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3C8885524B993F4001D1493 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		E3C8885A24BA171F001D1493 /* DayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
+		E3C8885C24BA17B1001D1493 /* WeekViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewController.swift; sourceTree = "<group>"; };
 		EAC481CC34ECEAD9E2C1B821 /* Pods_RainstormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainstormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEAFF683232FA12B2A9F402F /* Pods-Rainstorm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rainstorm.release.xcconfig"; path = "Target Support Files/Pods-Rainstorm/Pods-Rainstorm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,6 +180,7 @@
 		E3C8885324B993C3001D1493 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E3C8885724BA156C001D1493 /* WeatherViewControllers */,
 				E3C8885424B993CC001D1493 /* RootViewController */,
 			);
 			path = ViewControllers;
@@ -187,6 +192,31 @@
 				E3C8885524B993F4001D1493 /* RootViewController.swift */,
 			);
 			path = RootViewController;
+			sourceTree = "<group>";
+		};
+		E3C8885724BA156C001D1493 /* WeatherViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E3C8885924BA1587001D1493 /* WeekViewController */,
+				E3C8885824BA157D001D1493 /* DayViewController */,
+			);
+			path = WeatherViewControllers;
+			sourceTree = "<group>";
+		};
+		E3C8885824BA157D001D1493 /* DayViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E3C8885A24BA171F001D1493 /* DayViewController.swift */,
+			);
+			path = DayViewController;
+			sourceTree = "<group>";
+		};
+		E3C8885924BA1587001D1493 /* WeekViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E3C8885C24BA17B1001D1493 /* WeekViewController.swift */,
+			);
+			path = WeekViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,9 +404,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3C8885D24BA17B1001D1493 /* WeekViewController.swift in Sources */,
 				E3C8882C24B98BFA001D1493 /* AppDelegate.swift in Sources */,
 				E3C8882E24B98BFA001D1493 /* SceneDelegate.swift in Sources */,
 				E3C8885624B993F4001D1493 /* RootViewController.swift in Sources */,
+				E3C8885B24BA171F001D1493 /* DayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
