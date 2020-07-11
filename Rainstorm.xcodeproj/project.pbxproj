@@ -7,15 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23AA1500995B798DB2C82F45 /* Pods_Rainstorm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A3B3D902B2BCB3527264B9 /* Pods_Rainstorm.framework */; };
+		480539354016546E819EA767 /* Pods_RainstormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC481CC34ECEAD9E2C1B821 /* Pods_RainstormTests.framework */; };
 		E3C8882C24B98BFA001D1493 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8882B24B98BFA001D1493 /* AppDelegate.swift */; };
 		E3C8882E24B98BFA001D1493 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8882D24B98BFA001D1493 /* SceneDelegate.swift */; };
 		E3C8883024B98BFA001D1493 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8882F24B98BFA001D1493 /* ViewController.swift */; };
 		E3C8883324B98BFA001D1493 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3C8883124B98BFA001D1493 /* Main.storyboard */; };
 		E3C8883524B98BFB001D1493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3C8883424B98BFB001D1493 /* Assets.xcassets */; };
 		E3C8883824B98BFB001D1493 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3C8883624B98BFB001D1493 /* LaunchScreen.storyboard */; };
+		E3C8884624B98E9B001D1493 /* RainstormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8884524B98E9B001D1493 /* RainstormTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E3C8884824B98E9B001D1493 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3C8882024B98BFA001D1493 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3C8882724B98BFA001D1493;
+			remoteInfo = Rainstorm;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		043C91950D308B5CF343B02C /* Pods-RainstormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainstormTests.release.xcconfig"; path = "Target Support Files/Pods-RainstormTests/Pods-RainstormTests.release.xcconfig"; sourceTree = "<group>"; };
+		71A3B3D902B2BCB3527264B9 /* Pods_Rainstorm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rainstorm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8019F53DE884C853304D70 /* Pods-Rainstorm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rainstorm.debug.xcconfig"; path = "Target Support Files/Pods-Rainstorm/Pods-Rainstorm.debug.xcconfig"; sourceTree = "<group>"; };
+		D0F01FC6CBDB3052C0C2F95F /* Pods-RainstormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainstormTests.debug.xcconfig"; path = "Target Support Files/Pods-RainstormTests/Pods-RainstormTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E3C8882824B98BFA001D1493 /* Rainstorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rainstorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C8882B24B98BFA001D1493 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3C8882D24B98BFA001D1493 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +41,11 @@
 		E3C8883424B98BFB001D1493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3C8883724B98BFB001D1493 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3C8883924B98BFB001D1493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3C8884324B98E9B001D1493 /* RainstormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RainstormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3C8884524B98E9B001D1493 /* RainstormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainstormTests.swift; sourceTree = "<group>"; };
+		E3C8884724B98E9B001D1493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAC481CC34ECEAD9E2C1B821 /* Pods_RainstormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainstormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEAFF683232FA12B2A9F402F /* Pods-Rainstorm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rainstorm.release.xcconfig"; path = "Target Support Files/Pods-Rainstorm/Pods-Rainstorm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23AA1500995B798DB2C82F45 /* Pods_Rainstorm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3C8884024B98E9B001D1493 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				480539354016546E819EA767 /* Pods_RainstormTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		426981F99DD85A34863DC772 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71A3B3D902B2BCB3527264B9 /* Pods_Rainstorm.framework */,
+				EAC481CC34ECEAD9E2C1B821 /* Pods_RainstormTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE0B06C2B53EC290173DFB4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B8019F53DE884C853304D70 /* Pods-Rainstorm.debug.xcconfig */,
+				FEAFF683232FA12B2A9F402F /* Pods-Rainstorm.release.xcconfig */,
+				D0F01FC6CBDB3052C0C2F95F /* Pods-RainstormTests.debug.xcconfig */,
+				043C91950D308B5CF343B02C /* Pods-RainstormTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E3C8881F24B98BFA001D1493 = {
 			isa = PBXGroup;
 			children = (
 				E3C8882A24B98BFA001D1493 /* Rainstorm */,
+				E3C8884424B98E9B001D1493 /* RainstormTests */,
 				E3C8882924B98BFA001D1493 /* Products */,
+				BE0B06C2B53EC290173DFB4A /* Pods */,
+				426981F99DD85A34863DC772 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				E3C8882824B98BFA001D1493 /* Rainstorm.app */,
+				E3C8884324B98E9B001D1493 /* RainstormTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +123,15 @@
 			path = Rainstorm;
 			sourceTree = "<group>";
 		};
+		E3C8884424B98E9B001D1493 /* RainstormTests */ = {
+			isa = PBXGroup;
+			children = (
+				E3C8884524B98E9B001D1493 /* RainstormTests.swift */,
+				E3C8884724B98E9B001D1493 /* Info.plist */,
+			);
+			path = RainstormTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3C8883C24B98BFB001D1493 /* Build configuration list for PBXNativeTarget "Rainstorm" */;
 			buildPhases = (
+				8981D480B6E171791CE75B59 /* [CP] Check Pods Manifest.lock */,
 				E3C8882424B98BFA001D1493 /* Sources */,
 				E3C8882524B98BFA001D1493 /* Frameworks */,
 				E3C8882624B98BFA001D1493 /* Resources */,
+				712D6DC0E716F3221D220734 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -86,6 +153,26 @@
 			productName = Rainstorm;
 			productReference = E3C8882824B98BFA001D1493 /* Rainstorm.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E3C8884224B98E9B001D1493 /* RainstormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3C8884A24B98E9B001D1493 /* Build configuration list for PBXNativeTarget "RainstormTests" */;
+			buildPhases = (
+				583F8E6B98AD0690DDF842CB /* [CP] Check Pods Manifest.lock */,
+				E3C8883F24B98E9B001D1493 /* Sources */,
+				E3C8884024B98E9B001D1493 /* Frameworks */,
+				E3C8884124B98E9B001D1493 /* Resources */,
+				9B867A2FDDB0AF82F53D5301 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3C8884924B98E9B001D1493 /* PBXTargetDependency */,
+			);
+			name = RainstormTests;
+			productName = RainstormTests;
+			productReference = E3C8884324B98E9B001D1493 /* RainstormTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +186,10 @@
 				TargetAttributes = {
 					E3C8882724B98BFA001D1493 = {
 						CreatedOnToolsVersion = 11.5;
+					};
+					E3C8884224B98E9B001D1493 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = E3C8882724B98BFA001D1493;
 					};
 				};
 			};
@@ -116,6 +207,7 @@
 			projectRoot = "";
 			targets = (
 				E3C8882724B98BFA001D1493 /* Rainstorm */,
+				E3C8884224B98E9B001D1493 /* RainstormTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,7 +223,95 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E3C8884124B98E9B001D1493 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		583F8E6B98AD0690DDF842CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RainstormTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		712D6DC0E716F3221D220734 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rainstorm/Pods-Rainstorm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rainstorm/Pods-Rainstorm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rainstorm/Pods-Rainstorm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8981D480B6E171791CE75B59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rainstorm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B867A2FDDB0AF82F53D5301 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RainstormTests/Pods-RainstormTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RainstormTests/Pods-RainstormTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RainstormTests/Pods-RainstormTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E3C8882424B98BFA001D1493 /* Sources */ = {
@@ -144,7 +324,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E3C8883F24B98E9B001D1493 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3C8884624B98E9B001D1493 /* RainstormTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E3C8884924B98E9B001D1493 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3C8882724B98BFA001D1493 /* Rainstorm */;
+			targetProxy = E3C8884824B98E9B001D1493 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E3C8883124B98BFA001D1493 /* Main.storyboard */ = {
@@ -282,6 +478,7 @@
 		};
 		E3C8883D24B98BFB001D1493 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B8019F53DE884C853304D70 /* Pods-Rainstorm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +497,7 @@
 		};
 		E3C8883E24B98BFB001D1493 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEAFF683232FA12B2A9F402F /* Pods-Rainstorm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -313,6 +511,48 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E3C8884B24B98E9B001D1493 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0F01FC6CBDB3052C0C2F95F /* Pods-RainstormTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GTL8J49U3L;
+				INFOPLIST_FILE = RainstormTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyberhex.RainstormTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rainstorm.app/Rainstorm";
+			};
+			name = Debug;
+		};
+		E3C8884C24B98E9B001D1493 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 043C91950D308B5CF343B02C /* Pods-RainstormTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GTL8J49U3L;
+				INFOPLIST_FILE = RainstormTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyberhex.RainstormTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rainstorm.app/Rainstorm";
 			};
 			name = Release;
 		};
@@ -333,6 +573,15 @@
 			buildConfigurations = (
 				E3C8883D24B98BFB001D1493 /* Debug */,
 				E3C8883E24B98BFB001D1493 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3C8884A24B98E9B001D1493 /* Build configuration list for PBXNativeTarget "RainstormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3C8884B24B98E9B001D1493 /* Debug */,
+				E3C8884C24B98E9B001D1493 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
