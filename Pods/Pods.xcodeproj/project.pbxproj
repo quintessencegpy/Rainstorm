@@ -12,9 +12,9 @@
 		02DD7FC6A855D0675EA8B3BE66C99BBB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C061463250766C9C05995AB8EE63E66 /* XCTest.framework */; };
 		039EAFE7935113805F3FC21BF1B7C9D5 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24D91314C83AB0ECBE9EEC34F8900E3 /* LayoutConstraint.swift */; };
 		04543980C4A7CE442330B0F1BC4A9A54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033A36A29482FD32230FE0CA177F9BD3 /* Foundation.framework */; };
-		04E628CEF7670C8FEFF5DDD92E4551DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033A36A29482FD32230FE0CA177F9BD3 /* Foundation.framework */; };
 		0892D14FE7A3452423E9129D7917664B /* MatchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099D28453E4E338C134161D449912BE7 /* MatchError.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		092256E303520E50ADEFF25EEB4E73EE /* CwlCatchException.h in Headers */ = {isa = PBXBuildFile; fileRef = 83F22CB3EFC2E1ABCD5EC35A2F40218A /* CwlCatchException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BF67FBD0222E2B0FC339B192C11DE04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033A36A29482FD32230FE0CA177F9BD3 /* Foundation.framework */; };
 		10C8810E574F925B5CD3449B6DBE6EC0 /* Quick.h in Headers */ = {isa = PBXBuildFile; fileRef = 87967C27F1711E2C1747D7425686E183 /* Quick.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13D2A4D59DD9612E1AA7F3182A342162 /* mach_excServer.c in Sources */ = {isa = PBXBuildFile; fileRef = C7C18CF1A8AACF8DDC074D5FAACD8791 /* mach_excServer.c */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		14ECE81218F5F5C9BEF00819A7C078EC /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24761C257BA6CB90FF87F6D026E9905B /* Closures.swift */; };
@@ -42,6 +42,7 @@
 		3BD0C370BBCEBDEA68B8EDBD969370EB /* mach_excServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 99283C3B8112B89EE42EEFF4E493668B /* mach_excServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BFC243AB9BD579969F0D5756560BCAA /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE623B83A3E692E20423E0818E1DAAF9 /* Constraint.swift */; };
 		3D6A581E79FD9EAC1A948D8BC53F1EB0 /* QuickConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AEA6FFC2A3DD43CF48257D2FEE7120 /* QuickConfiguration.swift */; };
+		3DD28CB54DCE5C7E6EFE8A7B7062EAB0 /* Pods-RainstormTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C1CB2CECD3C7F7482A08D15B04B7CB /* Pods-RainstormTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E5285F4F36EAD77ECABBFB7F36BB1BB /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E08E1185470257B36CBCFE13E845AC /* ConstraintView+Extensions.swift */; };
 		4203EF96811AE514D64AE069311B1575 /* AllPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0543CFC922C384009CFD569D1DD748 /* AllPass.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		42F76698690916E0407F51610D829412 /* BeGreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ACF54CB25258BABAB175910CA6D1ED /* BeGreaterThan.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -50,10 +51,8 @@
 		46BDEBF35D99D2CC53EF72DFC5BDCDCC /* BeLessThanOrEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF52DDFB4B5F184EDA03469F0AB3343 /* BeLessThanOrEqual.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		4A9E7C1A8B697A1C0B0A1E0DF855A591 /* CwlCatchException.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6213FB707839087B9CDA7A826F5FF1 /* CwlCatchException.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		4ADE5FC9505A3BF7DF17AF9756585116 /* QCKDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = D1736BFB4357210EA96739C4F55B2976 /* QCKDSL.m */; };
-		4AE283829CBBBD8BED3482601D4658FF /* Pods-Rainstorm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFFFA4624A453C4A782758F340CB328B /* Pods-Rainstorm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C7A676DAE95EEAC3787A75349F0862D /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1D3BB256BC4A25817E98DFF3DDE573 /* SnapKit-dummy.m */; };
 		4E1DBC9FF76D6AD924D1356260438074 /* QuickSelectedTestSuiteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923FDA35D93932485C12E64D70C21564 /* QuickSelectedTestSuiteBuilder.swift */; };
-		50FFE5ADC951AF2134BA48B2926D9884 /* Pods-RainstormTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E1BF5E58F296C351767AE2FB90F925 /* Pods-RainstormTests-dummy.m */; };
 		512AAF465EE936155DD9BBA92368928E /* Quick-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DEAF2F4BE3A41C84C68B00DD5E9FE /* Quick-dummy.m */; };
 		51CD5887014967E77E58F5A163996454 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154CC2B1A6C6F1289D5FEA1EF8BF8AC0 /* ConstraintMaker.swift */; };
 		52AB6461CAA9481D24835F3E48301FC6 /* BeIdenticalTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AFE5A1BC004C879EEDD1178BC3A802 /* BeIdenticalTo.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -64,6 +63,7 @@
 		59BF9ABA8BB14E0E4E345D13AB6D49FB /* ExampleMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E2BC46680ACD189ECA4A52C54D6935 /* ExampleMetadata.swift */; };
 		5B6F70DDD4C63CF6ED95291BCB633494 /* ContainElementSatisfying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF28C0C6945ABEF44EF3E283F9E3462 /* ContainElementSatisfying.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		602E3758C0EF64AF6B7FCEA05BF5B9B9 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FB91FD004DA0947C70CF9A24F4E0CC /* Expectation.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		61552400DE1FA998634D93EBD72838A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033A36A29482FD32230FE0CA177F9BD3 /* Foundation.framework */; };
 		64E26D7D025AC4462DFA8BA66B38C9D8 /* HaveCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6A1F6AA4A36454835FA3FCCF1AAF4C /* HaveCount.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		69CCBEEDFCA6D743D80026568D961919 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F303917C33D10C806BF4C3628AA01 /* ConstraintMakerExtendable.swift */; };
 		69E3A06BBDFDC7D06A9D4BDC4E895E73 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE7E2F1ACD8AC2596357E4EF90BA2BD /* ConstraintRelatableTarget.swift */; };
@@ -90,10 +90,12 @@
 		8D17749611AB0C8BD51C068749D8DF68 /* NMBExceptionCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = E88751835B0F4A86CD04CBD2C8C30769 /* NMBExceptionCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D543DAD9A6C0B8BF8A5DB38AD876677 /* SatisfyAnyOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90EB0582C542874EE2104AB1FF4A5A9 /* SatisfyAnyOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		8D75EC8969EA46FBD6E1BED7791A3C37 /* BeLogical.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CA3EBA984D3115CCFCCCF4C48D953E /* BeLogical.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		8E21B4BB23538DD1A77945FA95D5600C /* Pods-Rainstorm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFFFA4624A453C4A782758F340CB328B /* Pods-Rainstorm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E4A2F4A1EF16B63817A516CC2743619 /* Quick-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 285464AF0995B18DA59003E3D33DA29E /* Quick-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9231B70907F130F31CF5717C502B780C /* ExampleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B159B662C81034F0203731C5E1686B /* ExampleGroup.swift */; };
 		94B18F2CFF543F6B2E43E84630C337E2 /* SuiteHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CDC8337AA8269290CA804A5E82A78 /* SuiteHooks.swift */; };
 		94DA3131D64B3D904BE28E72F1871065 /* BeAKindOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BED8EF9E4B979F342632DCF444FC4D /* BeAKindOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		956028115CC031EEEE3912970C5F8854 /* Pods-Rainstorm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F2F287A39B79942A3C18B6541CB6F4 /* Pods-Rainstorm-dummy.m */; };
 		99B5296A5EDECE0557B9DA53D9E19CA1 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19049E588BCA8CA874DDC6E7ABC9643 /* ConstraintItem.swift */; };
 		99E8019F4689A514DAC6AA40AFF7352E /* NMBObjCMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403633CE98D158E2D214FE18E0570A5B /* NMBObjCMatcher.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		9B09968922C73D50040C6EEF57890D6E /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A268DB348AB3BD470E96582C13B148D3 /* ConstraintConfig.swift */; };
@@ -109,10 +111,8 @@
 		A6CE2E672C8EB4DF57485428AFD64A3C /* URL+FileName.swift in Sources */ = {isa = PBXBuildFile; fileRef = D564AD7E62B5FE29898C7177D56167F0 /* URL+FileName.swift */; };
 		A7F5B07BF96955EFDC9106335235EDB2 /* QuickTestSuite.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FC64B0929FE108843B387D7012E1AC /* QuickTestSuite.swift */; };
 		A9996A6303084D17B9C439CB132A1F69 /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0D2DA8657149A32952B8E4397F751C /* DSL.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		AB37694AF966D459F783ED6F7C6CF387 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033A36A29482FD32230FE0CA177F9BD3 /* Foundation.framework */; };
 		AC35C9341C4BB156BB26FDD237EE3721 /* ConstraintDirectionalInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3F6DFEFD3551DDC5090CB420747A42 /* ConstraintDirectionalInsets.swift */; };
 		AD69407E2FA1D39A9E09248052F2D81B /* ExpectationMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84FA10773DF16A147247A564766A19 /* ExpectationMessage.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		AE45407E08F29852353411AF31D9E694 /* Pods-Rainstorm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F2F287A39B79942A3C18B6541CB6F4 /* Pods-Rainstorm-dummy.m */; };
 		AF60C00928A7AFE04E374B620EEA5F49 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F37131C61D156826934459D6DA4ACE /* Filter.swift */; };
 		B2A65EEDB5D5EC246EA68E10964FF7B3 /* ThrowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB73894A667B0A5E00E2E598480AB3AB /* ThrowError.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		B4058A2AA8486E9879F113E6F67B9679 /* AdapterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF10F8B7D156B98F7DACB4FF4391382C /* AdapterProtocols.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -144,6 +144,7 @@
 		D9D6150D329A87CBB415FD349F0C50FD /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BEEBA357D1D38E281AF511E001694A /* SourceLocation.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		DB84342A0C0DEABBF7F729DE55225D82 /* XCTestObservationCenter+Register.m in Sources */ = {isa = PBXBuildFile; fileRef = 569BF3E5C57D2703906B82945271DC46 /* XCTestObservationCenter+Register.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		DCD198D49C0A198A09525B7688EE3BC9 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE54CD8B1761A3C71F53C05E59056B0 /* Async.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		DEEB4AF3A64673214FF0CA10F8F48DE7 /* Pods-RainstormTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E1BF5E58F296C351767AE2FB90F925 /* Pods-RainstormTests-dummy.m */; };
 		E0EAC85F7ACFAD998B14FCE66144000E /* NMBStringify.h in Headers */ = {isa = PBXBuildFile; fileRef = 030612CE24D4A453111533817B230B0B /* NMBStringify.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E458AAE1AE9E2250F29806E5633B1860 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE28B68D1F86D06BA415EEC41E42421 /* Expression.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		E8F2429683B3015CBD39CE883770BCA7 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A49A14698E3F1D4933FF54667F58E /* ConstraintPriorityTarget.swift */; };
@@ -154,7 +155,6 @@
 		EE909C7C786140109051BC9562EEC7C8 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0935B4178B860BAA0BC2B9B5B169B340 /* ConstraintMakerPriortizable.swift */; };
 		EFB9CC9267297D8104141A4046AAD14E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033A36A29482FD32230FE0CA177F9BD3 /* Foundation.framework */; };
 		F01995755687FA91F51A15ED8FD9D125 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97420DFDF4D7319D1E634ED7078C2A27 /* World.swift */; };
-		F01CE495F97298A444365A32D2F7D499 /* Pods-RainstormTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C1CB2CECD3C7F7482A08D15B04B7CB /* Pods-RainstormTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F27A7DE93F66B0C12B4C646D99F5B9F4 /* CwlCatchException.m in Sources */ = {isa = PBXBuildFile; fileRef = 3803A5A66895B45BF335B779BAE335B2 /* CwlCatchException.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		F310B21703A7BC438A09DDB96670583F /* AssertionRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4A41F5E457368A44C8DDCA81A1738 /* AssertionRecorder.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		F4877B3857C780DCDB7F413A03F95600 /* BeCloseTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA7F49B0338D994F93090DEF180F878 /* BeCloseTo.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -164,33 +164,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1BED525C017840F2393DD11766A36D57 /* PBXContainerItemProxy */ = {
+		37AEFEDED576B3DDBF119C0D47C84DB6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C82891EAB7293DBEE916B21F57E8474D;
 			remoteInfo = Quick;
 		};
-		6803A938AEF134A88D310F2D1251DDFD /* PBXContainerItemProxy */ = {
+		734001E4959C56E0E5D2F38D473AF14B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
+		};
+		9C17877ACAFDC76F866481C36F3BE95C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C43B3F869362D7F5479170CA249E154B;
 			remoteInfo = "Pods-Rainstorm";
 		};
-		CE953E1587F0DD802EBDC577437E9B42 /* PBXContainerItemProxy */ = {
+		FB16CBE6EA71949820B4BBB158C36748 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6F13695E06195A78EA8A95F8C7ED0D2F;
 			remoteInfo = Nimble;
-		};
-		F84E083B4F1DD42A6462895DCCDD2292 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
-			remoteInfo = SnapKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -400,14 +400,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		527572B6E9A805E2F59991DDDA999360 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AB37694AF966D459F783ED6F7C6CF387 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		55C81EE76C6A69F1F69792A679310C68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -416,11 +408,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C5C86B8DE8008E5E7D3CBCE529554300 /* Frameworks */ = {
+		59053EF986C8CF7E374EC054DBB18362 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04E628CEF7670C8FEFF5DDD92E4551DD /* Foundation.framework in Frameworks */,
+				61552400DE1FA998634D93EBD72838A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B156A9B94A489D2F7E271E9B8372056F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BF67FBD0222E2B0FC339B192C11DE04 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,6 +733,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0F5168E0FEF3E678B64AA06251499D5A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E21B4BB23538DD1A77945FA95D5600C /* Pods-Rainstorm-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		51A00ABBA2BEF3913A4628399CEBD45B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -770,19 +778,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98F1EB1264518DD4161070E30C969595 /* Headers */ = {
+		BD3033FA1E6346FFC237E2BC979E7AF7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F01CE495F97298A444365A32D2F7D499 /* Pods-RainstormTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D1F3805F05A28EF2D4DF478D6FCCCB6A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4AE283829CBBBD8BED3482601D4658FF /* Pods-Rainstorm-umbrella.h in Headers */,
+				3DD28CB54DCE5C7E6EFE8A7B7062EAB0 /* Pods-RainstormTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -809,19 +809,19 @@
 		};
 		54BE39D2BBAD472B824FE7F89211C688 /* Pods-RainstormTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 862B8C34200B3DF29867B7B18AA5869A /* Build configuration list for PBXNativeTarget "Pods-RainstormTests" */;
+			buildConfigurationList = 19460438594E78E12EDBA5D31091C4E9 /* Build configuration list for PBXNativeTarget "Pods-RainstormTests" */;
 			buildPhases = (
-				98F1EB1264518DD4161070E30C969595 /* Headers */,
-				AA2BA21F8D61530C2D1E1B454BA00009 /* Sources */,
-				527572B6E9A805E2F59991DDDA999360 /* Frameworks */,
-				EE8CDF4A80F9ED6625225DBF8147426D /* Resources */,
+				BD3033FA1E6346FFC237E2BC979E7AF7 /* Headers */,
+				ABAADE38AEC260572E1829F34C8AA731 /* Sources */,
+				59053EF986C8CF7E374EC054DBB18362 /* Frameworks */,
+				07722BDF4F0AAB1A212F0A077CE3EAD8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				68834316281272B15EBF69F6E612D32B /* PBXTargetDependency */,
-				22631981E637FBFA130DE953F7D4538A /* PBXTargetDependency */,
-				AC3A1149D67F8A955F2CD4EA8A0A1478 /* PBXTargetDependency */,
+				4A07264871510A25661B50BE9C24F210 /* PBXTargetDependency */,
+				6170F2C6876AB66C84401707E1EB991A /* PBXTargetDependency */,
+				94BF46C8FE6017684DE2C4FA94A7C7E6 /* PBXTargetDependency */,
 			);
 			name = "Pods-RainstormTests";
 			productName = "Pods-RainstormTests";
@@ -848,17 +848,17 @@
 		};
 		C43B3F869362D7F5479170CA249E154B /* Pods-Rainstorm */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 17573F9C8BD8FA1CBEFA55494C98FBBE /* Build configuration list for PBXNativeTarget "Pods-Rainstorm" */;
+			buildConfigurationList = 8ADDEE7743F53CB2F9B77EAE1304620C /* Build configuration list for PBXNativeTarget "Pods-Rainstorm" */;
 			buildPhases = (
-				D1F3805F05A28EF2D4DF478D6FCCCB6A /* Headers */,
-				162A8F9EC8ADC9AE015B155ECC1FC022 /* Sources */,
-				C5C86B8DE8008E5E7D3CBCE529554300 /* Frameworks */,
-				2EA564624D4C226CBE1B80B65254D5FB /* Resources */,
+				0F5168E0FEF3E678B64AA06251499D5A /* Headers */,
+				D55074F0FA23FAE13209175CF66D98D2 /* Sources */,
+				B156A9B94A489D2F7E271E9B8372056F /* Frameworks */,
+				0FBDF92FCE1211F8DDCCB9F82016558E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AF4DD51F769184849B49AD0AC1A76DCD /* PBXTargetDependency */,
+				F7AED2685DB466402CD9D5CBFAA94169 /* PBXTargetDependency */,
 			);
 			name = "Pods-Rainstorm";
 			productName = "Pods-Rainstorm";
@@ -915,14 +915,21 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		295DA4774C40DBFC844D2E7BA312DE5F /* Resources */ = {
+		07722BDF4F0AAB1A212F0A077CE3EAD8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2EA564624D4C226CBE1B80B65254D5FB /* Resources */ = {
+		0FBDF92FCE1211F8DDCCB9F82016558E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		295DA4774C40DBFC844D2E7BA312DE5F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -943,24 +950,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE8CDF4A80F9ED6625225DBF8147426D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		162A8F9EC8ADC9AE015B155ECC1FC022 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AE45407E08F29852353411AF31D9E694 /* Pods-Rainstorm-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		694205E4C1C5652ABC91AB6B8D119A52 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1040,11 +1032,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA2BA21F8D61530C2D1E1B454BA00009 /* Sources */ = {
+		ABAADE38AEC260572E1829F34C8AA731 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50FFE5ADC951AF2134BA48B2926D9884 /* Pods-RainstormTests-dummy.m in Sources */,
+				DEEB4AF3A64673214FF0CA10F8F48DE7 /* Pods-RainstormTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1118,32 +1110,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D55074F0FA23FAE13209175CF66D98D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				956028115CC031EEEE3912970C5F8854 /* Pods-Rainstorm-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		22631981E637FBFA130DE953F7D4538A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-Rainstorm";
-			target = C43B3F869362D7F5479170CA249E154B /* Pods-Rainstorm */;
-			targetProxy = 6803A938AEF134A88D310F2D1251DDFD /* PBXContainerItemProxy */;
-		};
-		68834316281272B15EBF69F6E612D32B /* PBXTargetDependency */ = {
+		4A07264871510A25661B50BE9C24F210 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Nimble;
 			target = 6F13695E06195A78EA8A95F8C7ED0D2F /* Nimble */;
-			targetProxy = CE953E1587F0DD802EBDC577437E9B42 /* PBXContainerItemProxy */;
+			targetProxy = FB16CBE6EA71949820B4BBB158C36748 /* PBXContainerItemProxy */;
 		};
-		AC3A1149D67F8A955F2CD4EA8A0A1478 /* PBXTargetDependency */ = {
+		6170F2C6876AB66C84401707E1EB991A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Rainstorm";
+			target = C43B3F869362D7F5479170CA249E154B /* Pods-Rainstorm */;
+			targetProxy = 9C17877ACAFDC76F866481C36F3BE95C /* PBXContainerItemProxy */;
+		};
+		94BF46C8FE6017684DE2C4FA94A7C7E6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Quick;
 			target = C82891EAB7293DBEE916B21F57E8474D /* Quick */;
-			targetProxy = 1BED525C017840F2393DD11766A36D57 /* PBXContainerItemProxy */;
+			targetProxy = 37AEFEDED576B3DDBF119C0D47C84DB6 /* PBXContainerItemProxy */;
 		};
-		AF4DD51F769184849B49AD0AC1A76DCD /* PBXTargetDependency */ = {
+		F7AED2685DB466402CD9D5CBFAA94169 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SnapKit;
 			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
-			targetProxy = F84E083B4F1DD42A6462895DCCDD2292 /* PBXContainerItemProxy */;
+			targetProxy = 734001E4959C56E0E5D2F38D473AF14B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1211,44 +1211,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		0E65AAA84459E84537BF523C3955071C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1662D101B690EE04196BD31B1EF22E36 /* Pods-Rainstorm.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Rainstorm/Pods-Rainstorm-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Rainstorm/Pods-Rainstorm.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1354,9 +1316,9 @@
 			};
 			name = Release;
 		};
-		70A686CF99FF51E2A802163626E0CA8B /* Debug */ = {
+		29A6CF3DE43AB7139440E4936183EF0F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49203F6314663A78E3E5B449953E689B /* Pods-RainstormTests.debug.xcconfig */;
+			baseConfigurationReference = 1662D101B690EE04196BD31B1EF22E36 /* Pods-Rainstorm.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1369,7 +1331,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-RainstormTests/Pods-RainstormTests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Rainstorm/Pods-Rainstorm-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1378,7 +1340,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RainstormTests/Pods-RainstormTests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Rainstorm/Pods-Rainstorm.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1429,9 +1391,9 @@
 			};
 			name = Release;
 		};
-		9BACD96A787438FBE7964F73D2E8BFB8 /* Release */ = {
+		84537EA31C3AD3E04168739814CDCE99 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DC43925F91E173F2BBFABF0D0F0FC2C /* Pods-RainstormTests.release.xcconfig */;
+			baseConfigurationReference = 49203F6314663A78E3E5B449953E689B /* Pods-RainstormTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1454,6 +1416,44 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RainstormTests/Pods-RainstormTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		94A0BC76403C88A8B2FD1223030AA72E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB42321C02E1E39AC1631BB663E016B1 /* Pods-Rainstorm.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Rainstorm/Pods-Rainstorm-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Rainstorm/Pods-Rainstorm.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1562,9 +1562,9 @@
 			};
 			name = Debug;
 		};
-		DE2451617B286605EDE76BFE809E14ED /* Release */ = {
+		F03BF74EB15A2A8F062978E1A4666AE7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB42321C02E1E39AC1631BB663E016B1 /* Pods-Rainstorm.release.xcconfig */;
+			baseConfigurationReference = 2DC43925F91E173F2BBFABF0D0F0FC2C /* Pods-RainstormTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1577,7 +1577,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Rainstorm/Pods-Rainstorm-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-RainstormTests/Pods-RainstormTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1586,7 +1586,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Rainstorm/Pods-Rainstorm.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-RainstormTests/Pods-RainstormTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1640,20 +1640,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		17573F9C8BD8FA1CBEFA55494C98FBBE /* Build configuration list for PBXNativeTarget "Pods-Rainstorm" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0E65AAA84459E84537BF523C3955071C /* Debug */,
-				DE2451617B286605EDE76BFE809E14ED /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		189D56F652B0345CC3E1073543C1B391 /* Build configuration list for PBXNativeTarget "Quick" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A60C21B129FE3303C83F348225D0B9D /* Debug */,
 				019FDA69066080537AF78BDF015D62DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19460438594E78E12EDBA5D31091C4E9 /* Build configuration list for PBXNativeTarget "Pods-RainstormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84537EA31C3AD3E04168739814CDCE99 /* Debug */,
+				F03BF74EB15A2A8F062978E1A4666AE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1676,11 +1676,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		862B8C34200B3DF29867B7B18AA5869A /* Build configuration list for PBXNativeTarget "Pods-RainstormTests" */ = {
+		8ADDEE7743F53CB2F9B77EAE1304620C /* Build configuration list for PBXNativeTarget "Pods-Rainstorm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				70A686CF99FF51E2A802163626E0CA8B /* Debug */,
-				9BACD96A787438FBE7964F73D2E8BFB8 /* Release */,
+				29A6CF3DE43AB7139440E4936183EF0F /* Debug */,
+				94A0BC76403C88A8B2FD1223030AA72E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
