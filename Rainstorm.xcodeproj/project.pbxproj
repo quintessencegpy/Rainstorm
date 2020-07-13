@@ -22,6 +22,8 @@
 		E3C8886824BCC19D001D1493 /* WeatherRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8886724BCC19D001D1493 /* WeatherRequest.swift */; };
 		E3C8886A24BCC1CA001D1493 /* DarkSkyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8886924BCC1CA001D1493 /* DarkSkyResponse.swift */; };
 		E3C8886D24BCC44B001D1493 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8886C24BCC44B001D1493 /* RootViewModel.swift */; };
+		E3C8887024BCC6B7001D1493 /* DayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8886F24BCC6B7001D1493 /* DayViewModel.swift */; };
+		E3C8887324BCC6D6001D1493 /* WeekViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8887224BCC6D6001D1493 /* WeekViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		E3C8886724BCC19D001D1493 /* WeatherRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRequest.swift; sourceTree = "<group>"; };
 		E3C8886924BCC1CA001D1493 /* DarkSkyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyResponse.swift; sourceTree = "<group>"; };
 		E3C8886C24BCC44B001D1493 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		E3C8886F24BCC6B7001D1493 /* DayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewModel.swift; sourceTree = "<group>"; };
+		E3C8887224BCC6D6001D1493 /* WeekViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewModel.swift; sourceTree = "<group>"; };
 		EAC481CC34ECEAD9E2C1B821 /* Pods_RainstormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainstormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEAFF683232FA12B2A9F402F /* Pods-Rainstorm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rainstorm.release.xcconfig"; path = "Target Support Files/Pods-Rainstorm/Pods-Rainstorm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -222,6 +226,7 @@
 		E3C8885824BA157D001D1493 /* DayViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E3C8886E24BCC6AA001D1493 /* ViewModels */,
 				E3C8885A24BA171F001D1493 /* DayViewController.swift */,
 			);
 			path = DayViewController;
@@ -230,6 +235,7 @@
 		E3C8885924BA1587001D1493 /* WeekViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E3C8887124BCC6C7001D1493 /* ViewModels */,
 				E3C8885C24BA17B1001D1493 /* WeekViewController.swift */,
 			);
 			path = WeekViewController;
@@ -265,6 +271,22 @@
 			isa = PBXGroup;
 			children = (
 				E3C8886C24BCC44B001D1493 /* RootViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E3C8886E24BCC6AA001D1493 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E3C8886F24BCC6B7001D1493 /* DayViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E3C8887124BCC6C7001D1493 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E3C8887224BCC6D6001D1493 /* WeekViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -461,10 +483,12 @@
 				E3C8886024BCBF8E001D1493 /* Styles.swift in Sources */,
 				E3C8885624B993F4001D1493 /* RootViewController.swift in Sources */,
 				E3C8886824BCC19D001D1493 /* WeatherRequest.swift in Sources */,
+				E3C8887324BCC6D6001D1493 /* WeekViewModel.swift in Sources */,
 				E3C8886524BCC10C001D1493 /* WeatherData.swift in Sources */,
 				E3C8886D24BCC44B001D1493 /* RootViewModel.swift in Sources */,
 				E3C8886A24BCC1CA001D1493 /* DarkSkyResponse.swift in Sources */,
 				E3C8885B24BA171F001D1493 /* DayViewController.swift in Sources */,
+				E3C8887024BCC6B7001D1493 /* DayViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
