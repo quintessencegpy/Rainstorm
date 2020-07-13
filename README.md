@@ -1,6 +1,6 @@
 # Rainstorm for iOS
 
-This project is inspired by [cococast.com](https://cocoacasts.com/), and Used for Blog [A song of TDD and BUG](https://cyberhex.me/2020/06/14/tdd-part-one/)
+This project is inspired by [cococast.com](https://cocoacasts.com/), and used for blog [A song of TDD and BUG](https://cyberhex.me/2020/06/14/tdd-part-one/)
 
 ## Getting Started
 
