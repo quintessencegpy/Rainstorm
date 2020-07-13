@@ -9,8 +9,10 @@ This project is inspired by [cococast.com](https://cocoacasts.com/), and Used fo
 Clone the repo by executing the following command from the command line.
 
 ```bash
-git@github.com:quintessencegpy/Rainstorm.git
+git clone git@github.com:quintessencegpy/Rainstorm.git
 ```
+
+or just download the zip.
 
 ### Step 2: Install Dependencies
 
