@@ -24,6 +24,7 @@
 		E3C8886D24BCC44B001D1493 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8886C24BCC44B001D1493 /* RootViewModel.swift */; };
 		E3C8887024BCC6B7001D1493 /* DayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8886F24BCC6B7001D1493 /* DayViewModel.swift */; };
 		E3C8887324BCC6D6001D1493 /* WeekViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8887224BCC6D6001D1493 /* WeekViewModel.swift */; };
+		E3C8887624C0BED4001D1493 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8887524C0BED4001D1493 /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		E3C8886C24BCC44B001D1493 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		E3C8886F24BCC6B7001D1493 /* DayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewModel.swift; sourceTree = "<group>"; };
 		E3C8887224BCC6D6001D1493 /* WeekViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewModel.swift; sourceTree = "<group>"; };
+		E3C8887524C0BED4001D1493 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		EAC481CC34ECEAD9E2C1B821 /* Pods_RainstormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainstormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEAFF683232FA12B2A9F402F /* Pods-Rainstorm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rainstorm.release.xcconfig"; path = "Target Support Files/Pods-Rainstorm/Pods-Rainstorm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,6 +136,7 @@
 				E3C8885224B9938B001D1493 /* Resources */,
 				E3C8885124B99353001D1493 /* Storyboards */,
 				E3C8885024B992A6001D1493 /* SupportingFiles */,
+				E3C8887424C0BEC5001D1493 /* Extensions */,
 				E3C8884F24B9928E001D1493 /* ApplicationDelegates */,
 			);
 			path = Rainstorm;
@@ -289,6 +292,14 @@
 				E3C8887224BCC6D6001D1493 /* WeekViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E3C8887424C0BEC5001D1493 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E3C8887524C0BED4001D1493 /* UIImageExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -485,6 +496,7 @@
 				E3C8886824BCC19D001D1493 /* WeatherRequest.swift in Sources */,
 				E3C8887324BCC6D6001D1493 /* WeekViewModel.swift in Sources */,
 				E3C8886524BCC10C001D1493 /* WeatherData.swift in Sources */,
+				E3C8887624C0BED4001D1493 /* UIImageExtension.swift in Sources */,
 				E3C8886D24BCC44B001D1493 /* RootViewModel.swift in Sources */,
 				E3C8886A24BCC1CA001D1493 /* DarkSkyResponse.swift in Sources */,
 				E3C8885B24BA171F001D1493 /* DayViewController.swift in Sources */,
