@@ -30,6 +30,8 @@ class RootViewModel {
             } else if let data = data {
                 let decoder = JSONDecoder()
                 
+                decoder.dateDecodingStrategy = .secondsSince1970
+                
                 do {
                     let darkSkyResponse = try decoder.decode(DarkSkyResponse.self, from: data)
                     

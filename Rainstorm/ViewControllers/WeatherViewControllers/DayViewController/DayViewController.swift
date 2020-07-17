@@ -22,7 +22,7 @@ final class DayViewController: UIViewController {
     
     private lazy var dateLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .base
+        label.textColor = .baseTextColor
         label.font = .heavyLarge
         return label
     }()
@@ -37,6 +37,7 @@ final class DayViewController: UIViewController {
     private lazy var iconImageView: UIImageView = {
         let view = UIImageView()
         view.contentMode = .scaleAspectFit
+        view.tintColor = .baseTintColor
         return view
     }()
     
@@ -62,6 +63,12 @@ final class DayViewController: UIViewController {
         return label
     }()
     
+    private lazy var activityIndicatorView: UIActivityIndicatorView = {
+        let view = UIActivityIndicatorView(style: .medium)
+        view.hidesWhenStopped = true
+        return view
+    }()
+    
     // MARK: - Factory Method
     
     static func create(withViewModel viewModel: DayViewModel) -> DayViewController {
@@ -76,11 +83,10 @@ final class DayViewController: UIViewController {
         super.viewDidLoad()
         
         setupView()
-        setupViewModel()
     }
     
     private func setupView() {
-        view.backgroundColor = .green
+        view.backgroundColor = .lightBackgroundColor
         
         view.addSubview(dateLabel)
         view.addSubview(timeLabel)
@@ -88,6 +94,7 @@ final class DayViewController: UIViewController {
         view.addSubview(temperatureLabel)
         view.addSubview(windSpeedLabel)
         view.addSubview(descriptionLabel)
+        view.addSubview(activityIndicatorView)
         
         dateLabel.snp.makeConstraints { (make) in
             make.top.equalTo(view.safeAreaLayoutGuide).offset(8)
@@ -95,7 +102,7 @@ final class DayViewController: UIViewController {
         }
         
         timeLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(dateLabel.snp.bottom).inset(8)
+            make.top.equalTo(dateLabel.snp.bottom).offset(8)
             make.centerX.equalToSuperview()
         }
         
@@ -119,10 +126,27 @@ final class DayViewController: UIViewController {
             make.top.equalTo(iconImageView.snp.bottom).offset(20)
             make.centerX.equalToSuperview()
         }
+        
+        activityIndicatorView.snp.makeConstraints { (make) in
+            make.center.equalToSuperview()
+        }
+        
+        activityIndicatorView.startAnimating()
     }
     
     private func setupViewModel() {
+        // Hide Activity Indicator View
+        activityIndicatorView.stopAnimating()
         
+        // Configure Labels
+        dateLabel.text = viewModel?.date
+        timeLabel.text = viewModel?.time
+        windSpeedLabel.text = viewModel?.windSpeed
+        temperatureLabel.text = viewModel?.temperature
+        descriptionLabel.text = viewModel?.summary
+        
+        // Configure Icon Image View
+        iconImageView.image = viewModel?.image
     }
     
 }
