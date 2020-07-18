@@ -11,7 +11,11 @@ import SnapKit
 
 class RootViewController: UIViewController {
 
-    enum AlertType {
+    // MARK: - Types
+    
+    private enum AlertType {
+        case notAuthorizedToRequestLocation
+        case failedToRequestLocation
         case noWeatherDataAvailable
     }
     
@@ -70,40 +74,70 @@ class RootViewController: UIViewController {
     }
     
     private func setupViewModel() {
-        viewModel.didFetchWeatherData = { [weak self] result in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let weatherData):
-                    let dayViewModel = DayViewModel(weatherData: weatherData.current)
-                    
-                    self?.dayViewController.viewModel = dayViewModel
-                    
-                    let weekViewModel = WeekViewModel(weatherData: weatherData.forecast)
-                    
-                    self?.weekViewController.viewModel = weekViewModel
-                case .failure:
-                    self?.presentAlert(of: .noWeatherDataAvailable)
+        // Configure View Model
+        viewModel.didFetchWeatherData = { [weak self] (result) in
+            switch result {
+            case .success(let weatherData):
+                // Initialize Day View Model
+                let dayViewModel = DayViewModel(weatherData: weatherData.current)
+                
+                // Update Day View Controller
+                self?.dayViewController.viewModel = dayViewModel
+                
+                // Initialize Week View Model
+                let weekViewModel = WeekViewModel(weatherData: weatherData.forecast)
+                
+                // Update Week View Controller
+                self?.weekViewController.viewModel = weekViewModel
+            case .failure(let error):
+                let alertType: AlertType
+                
+                switch error {
+                case .notAuthorizedToRequestLocation:
+                    alertType = .notAuthorizedToRequestLocation
+                case .failedToRequestLocation:
+                    alertType = .failedToRequestLocation
+                case .noWeatherDataAvailable:
+                    alertType = .noWeatherDataAvailable
                 }
+                
+                // Notify User
+                self?.presentAlert(of: alertType)
+                
+                // Update Child View Controllers
+                self?.dayViewController.viewModel = nil
+                self?.weekViewController.viewModel = nil
             }
         }
     }
     
+    // MARK: -
+    
     private func presentAlert(of alertType: AlertType) {
+        // Helpers
         let title: String
         let message: String
         
         switch alertType {
+        case .notAuthorizedToRequestLocation:
+            title = "Unable to Fetch Weather Data for Your Location"
+            message = "Rainstorm is not authorized to access your current location. This means it's unable to show you the weather for your current location. You can grant Rainstorm access to your current location in the Settings application."
+        case .failedToRequestLocation:
+            title = "Unable to Fetch Weather Data for Your Location"
+            message = "Rainstorm is not able to fetch your current location due to a technical issue."
         case .noWeatherDataAvailable:
-            title = "noWeatherDataAvailable"
-            message = "noWeatherDataAvailable"
+            title = "Unable to Fetch Weather Data"
+            message = "The application is unable to fetch weather data. Please make sure your device is connected over Wi-Fi or cellular."
         }
         
+        // Initialize Alert Controller
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
-        let cancelAction = UIAlertAction(title: "OK", style: .cancel)
-        
+        // Add Cancel Action
+        let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
         alertController.addAction(cancelAction)
         
+        // Present Alert Controller
         present(alertController, animated: true)
     }
     
