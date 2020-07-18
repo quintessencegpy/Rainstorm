@@ -11,17 +11,42 @@ import Foundation
 class RootViewModel {
     
     enum WeatherDataError: Error {
+        case notAuthorizedToRequestLocation
+        case failedToRequestLocation
         case noWeatherDataAvailable
     }
     
     var didFetchWeatherData: ((Result<WeatherData, WeatherDataError>) -> Void)?
     
-    init() {
-        fetchWeatherData()
+    private let locationService: LocationService
+    
+    init(locationService: LocationService) {
+        self.locationService = locationService
+        
+        fetchWeatherData(for: Defaults.location)
+        
+        fetchLocation()
     }
     
-    private func fetchWeatherData() {
-        let weatherRequest = WeatherRequest(baseUrl: WeatherService.authenticatedBaseUrl, location: Defaults.location)
+    // MARK: - Helper Methods
+    
+    private func fetchLocation() {
+        locationService.fetchLocation { [weak self] (result) in
+            switch result {
+            case .success(let location):
+                // Fetch Weather Data
+                self?.fetchWeatherData(for: location)
+            case .failure(let error):
+                print("Unable to Fetch Location (\(error))")
+                
+                // Invoke Completion Handler
+                self?.didFetchWeatherData?(.failure(.notAuthorizedToRequestLocation))
+            }
+        }
+    }
+    
+    private func fetchWeatherData(for location: Location) {
+        let weatherRequest = WeatherRequest(baseUrl: WeatherService.authenticatedBaseUrl, location: location)
 
         URLSession.shared.dataTask(with: weatherRequest.url) { [weak self] (data, response, error) in
             if let error = error {

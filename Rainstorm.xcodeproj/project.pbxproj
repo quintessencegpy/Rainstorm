@@ -33,6 +33,9 @@
 		E3D8F41324C303E40039EE88 /* WeekDayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8F41224C303E40039EE88 /* WeekDayTableViewCell.swift */; };
 		E3D8F41524C307450039EE88 /* TableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8F41424C307450039EE88 /* TableViewCellExtension.swift */; };
 		E3D8F41724C327010039EE88 /* WeekViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8F41624C327010039EE88 /* WeekViewModelTests.swift */; };
+		E3D8F41924C352210039EE88 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8F41824C352210039EE88 /* Location.swift */; };
+		E3D8F41C24C3531D0039EE88 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8F41B24C3531D0039EE88 /* LocationService.swift */; };
+		E3D8F41E24C356010039EE88 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8F41D24C356010039EE88 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,9 @@
 		E3D8F41224C303E40039EE88 /* WeekDayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayTableViewCell.swift; sourceTree = "<group>"; };
 		E3D8F41424C307450039EE88 /* TableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellExtension.swift; sourceTree = "<group>"; };
 		E3D8F41624C327010039EE88 /* WeekViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewModelTests.swift; sourceTree = "<group>"; };
+		E3D8F41824C352210039EE88 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		E3D8F41B24C3531D0039EE88 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		E3D8F41D24C356010039EE88 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		EAC481CC34ECEAD9E2C1B821 /* Pods_RainstormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainstormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEAFF683232FA12B2A9F402F /* Pods-Rainstorm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rainstorm.release.xcconfig"; path = "Target Support Files/Pods-Rainstorm/Pods-Rainstorm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,6 +167,7 @@
 		E3C8882A24B98BFA001D1493 /* Rainstorm */ = {
 			isa = PBXGroup;
 			children = (
+				E3D8F41A24C352E60039EE88 /* Managers */,
 				E3C8886624BCC18A001D1493 /* Models */,
 				E3C8886324BCC08D001D1493 /* Protocols */,
 				E3C8885E24BCBF76001D1493 /* Configuration */,
@@ -296,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				E3C8886424BCC10C001D1493 /* WeatherData.swift */,
+				E3D8F41B24C3531D0039EE88 /* LocationService.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -305,6 +313,7 @@
 			children = (
 				E3C8886724BCC19D001D1493 /* WeatherRequest.swift */,
 				E3C8886924BCC1CA001D1493 /* DarkSkyResponse.swift */,
+				E3D8F41824C352210039EE88 /* Location.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -364,6 +373,14 @@
 				E3D8F41224C303E40039EE88 /* WeekDayTableViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E3D8F41A24C352E60039EE88 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E3D8F41D24C356010039EE88 /* LocationManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -555,6 +572,7 @@
 			files = (
 				E3C8885D24BA17B1001D1493 /* WeekViewController.swift in Sources */,
 				E3C8882C24B98BFA001D1493 /* AppDelegate.swift in Sources */,
+				E3D8F41C24C3531D0039EE88 /* LocationService.swift in Sources */,
 				E3C8886224BCBFA9001D1493 /* Configuration.swift in Sources */,
 				E3D8F41324C303E40039EE88 /* WeekDayTableViewCell.swift in Sources */,
 				E3C8882E24B98BFA001D1493 /* SceneDelegate.swift in Sources */,
@@ -567,7 +585,9 @@
 				E3D8F41524C307450039EE88 /* TableViewCellExtension.swift in Sources */,
 				E3D8F40D24C2FF750039EE88 /* WeekDayViewModel.swift in Sources */,
 				E3D8F41024C300D00039EE88 /* WeekDayRepresentable.swift in Sources */,
+				E3D8F41924C352210039EE88 /* Location.swift in Sources */,
 				E3C8886D24BCC44B001D1493 /* RootViewModel.swift in Sources */,
+				E3D8F41E24C356010039EE88 /* LocationManager.swift in Sources */,
 				E3C8886A24BCC1CA001D1493 /* DarkSkyResponse.swift in Sources */,
 				E3C8885B24BA171F001D1493 /* DayViewController.swift in Sources */,
 				E3C8887024BCC6B7001D1493 /* DayViewModel.swift in Sources */,

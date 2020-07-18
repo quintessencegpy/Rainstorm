@@ -12,14 +12,14 @@ import CoreLocation
 struct WeatherRequest {
     
     let baseUrl: URL
-    let location: CLLocation
+    let location: Location
     
     private var latitude: Double {
-        return location.coordinate.latitude
+        return location.latitude
     }
     
     private var longitude: Double {
-        return location.coordinate.longitude
+        return location.longitude
     }
     
     var url: URL {

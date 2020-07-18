@@ -35,8 +35,11 @@ struct WeekDayViewModel {
     }
     
     var temperature: String {
-        let min = String(format: "%.1f °F", weatherData.temperatureMin)
-        let max = String(format: "%.1f °F", weatherData.temperatureMax)
+        // the temperature we got from darksky is Fahrenheit, but we use Celsius in China
+        let celsiusMinTemperature = (weatherData.temperatureMin - 32.0) * 5.0 / 9.0
+        let celsiusMaxTemperature = (weatherData.temperatureMax - 32.0) * 5.0 / 9.0
+        let min = String(format: "%.1f °C", celsiusMinTemperature)
+        let max = String(format: "%.1f °C", celsiusMaxTemperature)
         
         return "\(min) - \(max)"
     }
