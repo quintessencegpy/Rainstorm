@@ -15,6 +15,18 @@ enum Defaults {
 
 }
 
+enum Configuration {
+    
+    static var refreshThreshold: TimeInterval {
+        #if DEBUG
+        return 60.0
+        #else
+        return 10.0 * 60.0
+        #endif
+    }
+    
+}
+
 enum WeatherService {
     
     private static let apiKey = "b3db279166b4b1b1f4b6f85fdfc62d3e"

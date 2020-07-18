@@ -6,7 +6,7 @@
 //  Copyright © 2020 Cyberhex. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class RootViewModel {
     
@@ -19,12 +19,22 @@ class RootViewModel {
     var didFetchWeatherData: ((Result<WeatherData, WeatherDataError>) -> Void)?
     
     private let locationService: LocationService
+    private let networkService: NetworkService
     
-    init(locationService: LocationService) {
+    init(networkService: NetworkService, locationService: LocationService) {
+        self.networkService = networkService
         self.locationService = locationService
         
         fetchWeatherData(for: Defaults.location)
         
+        fetchLocation()
+        
+        setupNotificationHandling()
+    }
+    
+    // MARK: - Public API
+    
+    func refresh() {
         fetchLocation()
     }
     
@@ -40,38 +50,94 @@ class RootViewModel {
                 print("Unable to Fetch Location (\(error))")
                 
                 // Invoke Completion Handler
-                self?.didFetchWeatherData?(.failure(.notAuthorizedToRequestLocation))
+                DispatchQueue.main.async {
+                    self?.didFetchWeatherData?(.failure(.notAuthorizedToRequestLocation))
+                }
             }
         }
     }
     
     private func fetchWeatherData(for location: Location) {
+        // Initialize Weather Request
         let weatherRequest = WeatherRequest(baseUrl: WeatherService.authenticatedBaseUrl, location: location)
-
-        URLSession.shared.dataTask(with: weatherRequest.url) { [weak self] (data, response, error) in
-            if let error = error {
-                print("error \(error)")
-                self?.didFetchWeatherData?(.failure(.noWeatherDataAvailable))
-            } else if let data = data {
-                let decoder = JSONDecoder()
-                
-                decoder.dateDecodingStrategy = .secondsSince1970
-                
-                do {
-                    let darkSkyResponse = try decoder.decode(DarkSkyResponse.self, from: data)
-                    
-                    self?.didFetchWeatherData?(.success(darkSkyResponse))
-                } catch {
-                    
-                    self?.didFetchWeatherData?(.failure(.noWeatherDataAvailable))
-
-                }
-            } else {
-                
-                self?.didFetchWeatherData?(.failure(.noWeatherDataAvailable))
-                
+        
+        // Fetch Weather Data
+        networkService.fetchData(with: weatherRequest.url) { [weak self] (data, response, error) in
+            if let response = response as? HTTPURLResponse {
+                print("Status Code: \(response.statusCode)")
             }
-        }.resume()
+            
+            DispatchQueue.main.async {
+                if let error = error {
+                    print("Unable to Fetch Weather Data \(error)")
+                    
+                    // Invoke Completion Handler
+                    self?.didFetchWeatherData?(.failure(.noWeatherDataAvailable))
+                } else if let data = data {
+                    // Initialize JSON Decoder
+                    let decoder = JSONDecoder()
+                    
+                    // Configure JSON Decoder
+                    decoder.dateDecodingStrategy = .secondsSince1970
+                    
+                    do {
+                        // Decode JSON Response
+                        let darkSkyResponse = try decoder.decode(DarkSkyResponse.self, from: data)
+                        
+                        // Update User Defaults
+                        UserDefaults.didFetchWeatherData = Date()
+                        
+                        // Invoke Completion Handler
+                        self?.didFetchWeatherData?(.success(darkSkyResponse))
+                    } catch {
+                        print("Unable to Decode JSON Response \(error)")
+                        
+                        // Invoke Completion Handler
+                        self?.didFetchWeatherData?(.failure(.noWeatherDataAvailable))
+                    }
+                } else {
+                    // Invoke Completion Handler
+                    self?.didFetchWeatherData?(.failure(.noWeatherDataAvailable))
+                }
+            }
+        }
+    }
+    
+    // MARK: -
+    
+    private func setupNotificationHandling() {
+        // Application Will Enter Foreground
+ 
+        NotificationCenter.default.addObserver(forName: UIApplication.willEnterForegroundNotification, object: nil, queue: OperationQueue.main) { [weak self] (_) in
+            guard let didFetchWeatherData = UserDefaults.didFetchWeatherData else {
+                self?.refresh()
+                return
+            }
+            
+            if Date().timeIntervalSince(didFetchWeatherData) > Configuration.refreshThreshold {
+                self?.refresh()
+            }
+        }
+    }
+}
+
+extension UserDefaults {
+    
+    // MARK: - Types
+    
+    private enum Keys {
+        static let didFetchWeatherData = "didFetchWeatherData"
+    }
+    
+    // MARK: - Class Computed Properties
+    
+    fileprivate class var didFetchWeatherData: Date? {
+        get {
+            return UserDefaults.standard.object(forKey: Keys.didFetchWeatherData) as? Date
+        }
+        set(newValue) {
+            UserDefaults.standard.set(newValue, forKey: Keys.didFetchWeatherData)
+        }
     }
     
 }

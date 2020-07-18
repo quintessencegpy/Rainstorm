@@ -25,9 +25,13 @@ class RootViewController: UIViewController {
     
     // MARK: - View Controllers
     
-    private let dayViewController: DayViewController = DayViewController()
+    private lazy var dayViewController: DayViewController = DayViewController()
     
-    private let weekViewController: WeekViewController = WeekViewController()
+    private lazy var weekViewController: WeekViewController = {
+        let vc = WeekViewController()
+        vc.delegate = self
+        return vc
+    }()
     
     // MARK: - View Life Cycle
     
@@ -149,6 +153,14 @@ extension RootViewController {
         enum DayView {
             static let height: CGFloat = 200
         }
+    }
+    
+}
+
+extension RootViewController: WeekViewControllerDelegate {
+    
+    func controllerDidRefresh(_ controller: WeekViewController) {
+        viewModel.refresh()
     }
     
 }
