@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		23AA1500995B798DB2C82F45 /* Pods_Rainstorm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A3B3D902B2BCB3527264B9 /* Pods_Rainstorm.framework */; };
 		480539354016546E819EA767 /* Pods_RainstormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC481CC34ECEAD9E2C1B821 /* Pods_RainstormTests.framework */; };
+		E346ADC524C2C26200E63974 /* darksky.json in Resources */ = {isa = PBXBuildFile; fileRef = E346ADC424C2C26200E63974 /* darksky.json */; };
+		E346ADC824C2C76E00E63974 /* QuickSpecExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E346ADC724C2C76E00E63974 /* QuickSpecExtension.swift */; };
 		E3C8882C24B98BFA001D1493 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8882B24B98BFA001D1493 /* AppDelegate.swift */; };
 		E3C8882E24B98BFA001D1493 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8882D24B98BFA001D1493 /* SceneDelegate.swift */; };
 		E3C8883524B98BFB001D1493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3C8883424B98BFB001D1493 /* Assets.xcassets */; };
@@ -25,6 +27,7 @@
 		E3C8887024BCC6B7001D1493 /* DayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8886F24BCC6B7001D1493 /* DayViewModel.swift */; };
 		E3C8887324BCC6D6001D1493 /* WeekViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8887224BCC6D6001D1493 /* WeekViewModel.swift */; };
 		E3C8887624C0BED4001D1493 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8887524C0BED4001D1493 /* UIImageExtension.swift */; };
+		E3C8887A24C1FA46001D1493 /* DayViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8887924C1FA46001D1493 /* DayViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,8 @@
 		71A3B3D902B2BCB3527264B9 /* Pods_Rainstorm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rainstorm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8019F53DE884C853304D70 /* Pods-Rainstorm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rainstorm.debug.xcconfig"; path = "Target Support Files/Pods-Rainstorm/Pods-Rainstorm.debug.xcconfig"; sourceTree = "<group>"; };
 		D0F01FC6CBDB3052C0C2F95F /* Pods-RainstormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainstormTests.debug.xcconfig"; path = "Target Support Files/Pods-RainstormTests/Pods-RainstormTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E346ADC424C2C26200E63974 /* darksky.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = darksky.json; sourceTree = "<group>"; };
+		E346ADC724C2C76E00E63974 /* QuickSpecExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSpecExtension.swift; sourceTree = "<group>"; };
 		E3C8882824B98BFA001D1493 /* Rainstorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rainstorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C8882B24B98BFA001D1493 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3C8882D24B98BFA001D1493 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +67,7 @@
 		E3C8886F24BCC6B7001D1493 /* DayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewModel.swift; sourceTree = "<group>"; };
 		E3C8887224BCC6D6001D1493 /* WeekViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewModel.swift; sourceTree = "<group>"; };
 		E3C8887524C0BED4001D1493 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		E3C8887924C1FA46001D1493 /* DayViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewModelTests.swift; sourceTree = "<group>"; };
 		EAC481CC34ECEAD9E2C1B821 /* Pods_RainstormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainstormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEAFF683232FA12B2A9F402F /* Pods-Rainstorm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rainstorm.release.xcconfig"; path = "Target Support Files/Pods-Rainstorm/Pods-Rainstorm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +112,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E346ADC324C2C22400E63974 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				E346ADC424C2C26200E63974 /* darksky.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		E346ADC624C2C47D00E63974 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E346ADC724C2C76E00E63974 /* QuickSpecExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		E3C8881F24B98BFA001D1493 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +167,9 @@
 		E3C8884424B98E9B001D1493 /* RainstormTests */ = {
 			isa = PBXGroup;
 			children = (
+				E346ADC624C2C47D00E63974 /* Extensions */,
+				E346ADC324C2C22400E63974 /* Stubs */,
+				E3C8887724C1F56A001D1493 /* Mocks */,
 				E3C8884E24B99251001D1493 /* Cases */,
 				E3C8884D24B99203001D1493 /* SupportingFiles */,
 			);
@@ -162,6 +187,7 @@
 		E3C8884E24B99251001D1493 /* Cases */ = {
 			isa = PBXGroup;
 			children = (
+				E3C8887924C1FA46001D1493 /* DayViewModelTests.swift */,
 			);
 			path = Cases;
 			sourceTree = "<group>";
@@ -302,6 +328,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		E3C8887724C1F56A001D1493 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -359,6 +392,7 @@
 					};
 					E3C8884224B98E9B001D1493 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 						TestTargetID = E3C8882724B98BFA001D1493;
 					};
 				};
@@ -396,6 +430,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E346ADC524C2C26200E63974 /* darksky.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +543,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E346ADC824C2C76E00E63974 /* QuickSpecExtension.swift in Sources */,
+				E3C8887A24C1FA46001D1493 /* DayViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -690,6 +727,7 @@
 			baseConfigurationReference = D0F01FC6CBDB3052C0C2F95F /* Pods-RainstormTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GTL8J49U3L;
 				INFOPLIST_FILE = RainstormTests/SupportingFiles/Info.plist;
@@ -700,6 +738,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cyberhex.RainstormTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rainstorm.app/Rainstorm";
@@ -711,6 +750,7 @@
 			baseConfigurationReference = 043C91950D308B5CF343B02C /* Pods-RainstormTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GTL8J49U3L;
 				INFOPLIST_FILE = RainstormTests/SupportingFiles/Info.plist;
