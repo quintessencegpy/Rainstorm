@@ -32,6 +32,7 @@
 		E3D8F41024C300D00039EE88 /* WeekDayRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8F40F24C300D00039EE88 /* WeekDayRepresentable.swift */; };
 		E3D8F41324C303E40039EE88 /* WeekDayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8F41224C303E40039EE88 /* WeekDayTableViewCell.swift */; };
 		E3D8F41524C307450039EE88 /* TableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8F41424C307450039EE88 /* TableViewCellExtension.swift */; };
+		E3D8F41724C327010039EE88 /* WeekViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8F41624C327010039EE88 /* WeekViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		E3D8F40F24C300D00039EE88 /* WeekDayRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayRepresentable.swift; sourceTree = "<group>"; };
 		E3D8F41224C303E40039EE88 /* WeekDayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayTableViewCell.swift; sourceTree = "<group>"; };
 		E3D8F41424C307450039EE88 /* TableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellExtension.swift; sourceTree = "<group>"; };
+		E3D8F41624C327010039EE88 /* WeekViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewModelTests.swift; sourceTree = "<group>"; };
 		EAC481CC34ECEAD9E2C1B821 /* Pods_RainstormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainstormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEAFF683232FA12B2A9F402F /* Pods-Rainstorm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rainstorm.release.xcconfig"; path = "Target Support Files/Pods-Rainstorm/Pods-Rainstorm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -196,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				E3C8887924C1FA46001D1493 /* DayViewModelTests.swift */,
+				E3D8F41624C327010039EE88 /* WeekViewModelTests.swift */,
 			);
 			path = Cases;
 			sourceTree = "<group>";
@@ -575,6 +578,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3D8F41724C327010039EE88 /* WeekViewModelTests.swift in Sources */,
 				E346ADC824C2C76E00E63974 /* QuickSpecExtension.swift in Sources */,
 				E3C8887A24C1FA46001D1493 /* DayViewModelTests.swift in Sources */,
 			);

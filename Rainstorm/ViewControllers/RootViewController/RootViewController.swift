@@ -78,7 +78,7 @@ class RootViewController: UIViewController {
                     
                     self?.dayViewController.viewModel = dayViewModel
                     
-                    let weekViewModel = WeekViewModel(weatherData: weatherData.forcast)
+                    let weekViewModel = WeekViewModel(weatherData: weatherData.forecast)
                     
                     self?.weekViewController.viewModel = weekViewModel
                 case .failure:

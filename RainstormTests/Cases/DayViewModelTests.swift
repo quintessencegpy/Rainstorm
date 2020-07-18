@@ -14,7 +14,7 @@ import Nimble
 class DayViewModelTests: QuickSpec {
 
     override func spec() {
-        describe("a DayViewModelTests") {
+        describe("a DayViewModel") {
             var sut: DayViewModel!
             
             beforeEach {
