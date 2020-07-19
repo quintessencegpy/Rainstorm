@@ -38,6 +38,7 @@
 		E3D8F41E24C356010039EE88 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8F41D24C356010039EE88 /* LocationManager.swift */; };
 		E3D8F42024C363BC0039EE88 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8F41F24C363BC0039EE88 /* NetworkService.swift */; };
 		E3D8F42224C365370039EE88 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8F42124C365370039EE88 /* NetworkManager.swift */; };
+		E3D8F42424C3EAB50039EE88 /* WeekDayViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8F42324C3EAB50039EE88 /* WeekDayViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		E3D8F41D24C356010039EE88 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		E3D8F41F24C363BC0039EE88 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		E3D8F42124C365370039EE88 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E3D8F42324C3EAB50039EE88 /* WeekDayViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayViewModelTests.swift; sourceTree = "<group>"; };
 		EAC481CC34ECEAD9E2C1B821 /* Pods_RainstormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainstormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEAFF683232FA12B2A9F402F /* Pods-Rainstorm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rainstorm.release.xcconfig"; path = "Target Support Files/Pods-Rainstorm/Pods-Rainstorm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -210,6 +212,7 @@
 			children = (
 				E3C8887924C1FA46001D1493 /* DayViewModelTests.swift */,
 				E3D8F41624C327010039EE88 /* WeekViewModelTests.swift */,
+				E3D8F42324C3EAB50039EE88 /* WeekDayViewModelTests.swift */,
 			);
 			path = Cases;
 			sourceTree = "<group>";
@@ -609,6 +612,7 @@
 				E3D8F41724C327010039EE88 /* WeekViewModelTests.swift in Sources */,
 				E346ADC824C2C76E00E63974 /* QuickSpecExtension.swift in Sources */,
 				E3C8887A24C1FA46001D1493 /* DayViewModelTests.swift in Sources */,
+				E3D8F42424C3EAB50039EE88 /* WeekDayViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
