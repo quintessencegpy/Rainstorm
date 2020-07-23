@@ -39,6 +39,9 @@
 		E3D8F42024C363BC0039EE88 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8F41F24C363BC0039EE88 /* NetworkService.swift */; };
 		E3D8F42224C365370039EE88 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8F42124C365370039EE88 /* NetworkManager.swift */; };
 		E3D8F42424C3EAB50039EE88 /* WeekDayViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8F42324C3EAB50039EE88 /* WeekDayViewModelTests.swift */; };
+		E3D8F42824C48F650039EE88 /* RootViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8F42724C48F650039EE88 /* RootViewModelTests.swift */; };
+		E3D8F42A24C4A4410039EE88 /* MockLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8F42924C4A4410039EE88 /* MockLocationService.swift */; };
+		E3D8F42C24C4A5030039EE88 /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8F42B24C4A5030039EE88 /* MockNetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +93,9 @@
 		E3D8F41F24C363BC0039EE88 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		E3D8F42124C365370039EE88 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E3D8F42324C3EAB50039EE88 /* WeekDayViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayViewModelTests.swift; sourceTree = "<group>"; };
+		E3D8F42724C48F650039EE88 /* RootViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModelTests.swift; sourceTree = "<group>"; };
+		E3D8F42924C4A4410039EE88 /* MockLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocationService.swift; sourceTree = "<group>"; };
+		E3D8F42B24C4A5030039EE88 /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
 		EAC481CC34ECEAD9E2C1B821 /* Pods_RainstormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainstormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEAFF683232FA12B2A9F402F /* Pods-Rainstorm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rainstorm.release.xcconfig"; path = "Target Support Files/Pods-Rainstorm/Pods-Rainstorm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -213,6 +219,7 @@
 				E3C8887924C1FA46001D1493 /* DayViewModelTests.swift */,
 				E3D8F41624C327010039EE88 /* WeekViewModelTests.swift */,
 				E3D8F42324C3EAB50039EE88 /* WeekDayViewModelTests.swift */,
+				E3D8F42724C48F650039EE88 /* RootViewModelTests.swift */,
 			);
 			path = Cases;
 			sourceTree = "<group>";
@@ -363,6 +370,8 @@
 		E3C8887724C1F56A001D1493 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				E3D8F42924C4A4410039EE88 /* MockLocationService.swift */,
+				E3D8F42B24C4A5030039EE88 /* MockNetworkService.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -609,6 +618,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3D8F42A24C4A4410039EE88 /* MockLocationService.swift in Sources */,
+				E3D8F42C24C4A5030039EE88 /* MockNetworkService.swift in Sources */,
+				E3D8F42824C48F650039EE88 /* RootViewModelTests.swift in Sources */,
 				E3D8F41724C327010039EE88 /* WeekViewModelTests.swift in Sources */,
 				E346ADC824C2C76E00E63974 /* QuickSpecExtension.swift in Sources */,
 				E3C8887A24C1FA46001D1493 /* DayViewModelTests.swift in Sources */,
